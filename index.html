@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meljohn's Portfolio - Home</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Include the navigation bar -->
+    <nav>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="images/website_logo.png" class="logo" alt="website_logo">
+            </div>
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Meljohn Reyes</h1>
+            <p> Hey there! I'm a 3rd-year IT student majoring in web development, an apprentice tattoo artist, and a working student. I blend creativity with technology—crafting seamless digital experiences by day and perfecting my tattoo artistry by night. Welcome to my portfolio!</p>
+            <button id="viewProjectsBtn">Featured Projects</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/me.png" alt="Meljohn Reyes">
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="lower-section">
+    <h2>Featured Projects</h2>
+    <p>Check out some of my best work!</p>
+
+    <!-- ✅ Mini Gallery with Descriptions -->
+    <!-- ✅ Mini Gallery with Click-to-Expand Feature -->
+<div class="gallery">
+    
+
+    <div class="gallery-item" onclick="openModal('project2')">
+        <img src="images/project4_output_1.png" alt="Project 2">
+        <h3>TaskFlo Website</h3>
+        <p>Designed to make students life easier. It is a note website wherein student can input their "To do list" to make their day proactive.</p>
+    </div>
+
+    <div class="gallery-item" onclick="openModal('project4')">
+        <img src="images/orderhome.png" alt="Project 3">
+        <h3>OrderBlitz</h3>
+        <p>A simple e-commerce website to cater fast delivery!</p>
+    </div>
+
+    <div class="gallery-item" onclick="openModal('project3')">
+        <img src="images/project2_output_1.png" alt="Project 3">
+        <h3>Portfolio</h3>
+        <p>A portfolio wherein it shows simplistic theme with good functionalities.</p>
+    </div>
+
+    <div class="gallery-item" onclick="openModal('project1')">
+        <img src="images/artwork_tattoo (11).jpg" alt="Project 1">
+        <h3>Tattoo Artworks (Artifacts)</h3>
+        <p>My Tattoo portfolio gallery - this is my compilation of my interest into the tattoo industry, everything is done by me.</p>
+    </div>  
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="lower-section">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p>"Meljohn is an incredibly talented web developer with a keen eye for detail. He helped create out capstone project!"</p>
+                <h4>- Raven Gomop-as, IT friend</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Meljohn is great at his artistic works!"</p>
+                <h4>- Reyes Meljohn, Tattoo Artist</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"The best experience I've had with a fellow developer. Meljohn understood my vision and executed it flawlessly. will highly recomment with my other friends!"</p>
+                <h4>- Mel Quitoles, BSA graduate.</h4>
+            </div>
+        </div>
+    </section>
+        
+
+</div>
+
+<!-- ✅ Modal (Hidden by Default) -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div id="modalImages" class="modal-gallery"></div> <!-- ✅ Grid Container for Images -->
+    </div>
+</div>
+
+
+</section>
+
+<footer>
+    <p>&copy; 2025 Meljohn Reyes. All Rights Reserved.</p>
+    <p>Designed with love & creativity.</p>
+</footer>
+
+
+</section>
+<script src="js/myjs.js"></script>
+
+</body>
+</html>
+
+<script src="js/myjs.js"></script>
+
+</body>
+</html>
